@@ -1,4 +1,4 @@
-from pyrogram import Client, filters
+from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import os
 
@@ -21,6 +21,6 @@ async def auto_reply(client, message):
         [InlineKeyboardButton("🔄 Updates", url="https://t.me/SK_Movies1")]
     ])
 
-    await message.reply_text(text, reply_markup=keyboard, parse_mode="HTML", disable_web_page_preview=True)
+    await message.reply_text(text, reply_markup=keyboard, parse_mode=enums.ParseMode.HTML, disable_web_page_preview=True)
 
 app.run()
