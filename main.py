@@ -13,7 +13,7 @@ app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 async def auto_reply(client, message):
     text = (
         "⚠️ <b>This bot is not working anymore</b> ⚠️\n\n"
-        "📢 Please use our new movies bot 👉 <a href='https://t.me/SK_Movies1_bot'>@SK_Movies1_bot</a>"
+        "📢 <b>Please use our new Movies bot 👉 <a href='https://t.me/SK_Movies1_bot'>@SK_Movies1_bot</a></b>"
     )
 
     keyboard = InlineKeyboardMarkup([
